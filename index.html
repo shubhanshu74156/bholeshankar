@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Logistics - Your Reliable Shipping Partner</title>
+    <title>Bhole Shankar Transport - Your Reliable Shipping Partner</title>
     <style>
         * {
             margin: 0;
@@ -11,14 +11,16 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #f8f9fa;
         }
         header {
-            background-color: #1a5f7a;
-            color: #fff;
+            background-color: #FFD700;
+            color: #333;
             padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         nav {
             display: flex;
@@ -28,6 +30,19 @@
             margin: 0 auto;
             padding: 0 2rem;
         }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            height: 80px;
+            width: auto;
+            margin-right: 1rem;
+        }
+        nav h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
         nav ul {
             display: flex;
             list-style: none;
@@ -36,8 +51,13 @@
             margin-left: 2rem;
         }
         nav a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #1a5f7a;
         }
         .hero {
             background-image: url('/api/placeholder/1200/600');
@@ -49,24 +69,30 @@
             text-align: center;
         }
         .hero-content {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 2rem;
-            border-radius: 5px;
+            border-radius: 10px;
             max-width: 600px;
             margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            color: #1a5f7a;
         }
         .btn {
             display: inline-block;
             background-color: #1a5f7a;
             color: #fff;
-            padding: 0.5rem 1rem;
+            padding: 0.7rem 1.5rem;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #154c61;
         }
         .features, .services, .contact {
             max-width: 1200px;
@@ -76,6 +102,7 @@
         .features h2, .services h2, .contact h2 {
             text-align: center;
             margin-bottom: 2rem;
+            color: #1a5f7a;
         }
         .feature-grid, .service-grid {
             display: grid;
@@ -83,18 +110,38 @@
             gap: 2rem;
         }
         .feature, .service {
-            background-color: #f4f4f4;
+            background-color: #fff;
             padding: 1.5rem;
-            border-radius: 5px;
+            border-radius: 10px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
-        form {
-            display: grid;
-            gap: 1rem;
+        .feature:hover, .service:hover {
+            transform: translateY(-5px);
         }
-        input, textarea {
-            width: 100%;
-            padding: 0.5rem;
+        .feature h3, .service h3 {
+            color: #1a5f7a;
+            margin-bottom: 1rem;
+        }
+        .contact-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            overflow-wrap: break-word;
+        }
+        .contact-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            max-width: 300px;
+        }
+        .contact-card h3 {
+            color: #1a5f7a;
+            margin-bottom: 1rem;
         }
         footer {
             background-color: #1a5f7a;
@@ -107,7 +154,10 @@
 <body>
     <header>
         <nav>
-            <h1>Bhole Shankar Trasnport</h1>
+            <div class="logo-container">
+                <img src="Bhole Shankar Transport-2_page-0001.jpg" alt="Bhole Shankar Transport Logo">
+                <h1>Bhole Shankar Transport</h1>
+            </div>
             <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#services">Services</a></li>
@@ -119,7 +169,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Your Reliable Shipping Partner</h1>
-            <p>Bhole Shankar Trasnport offers fast, secure, and efficient shipping solutions for businesses of all sizes.</p>
+            <p>Bhole Shankar Transport offers fast, secure, and efficient shipping solutions for businesses of all sizes.</p>
             <a href="#contact" class="btn">Get a Quote</a>
         </div>
     </section>
@@ -166,17 +216,20 @@
 
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Your Phone">
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p>bholeshankartransport6484@gmail.com</p>
+            </div>
+            <div class="contact-card">
+                <h3>Office Address</h3>
+                <p>123 Transport Street,<br>Logistics City, 12345</p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Swift Logistics. All rights reserved.</p>
+        <p>&copy; 2024 Bhole Shankar Transport. All rights reserved.</p>
     </footer>
 </body>
 </html>
