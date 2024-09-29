@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Logistics - Your Reliable Shipping Partner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #1a5f7a;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #1a5f7a;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .features, .services, .contact {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .features h2, .services h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .feature-grid, .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .feature, .service {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+        }
+        footer {
+            background-color: #1a5f7a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Swift Logistics</h1>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Reliable Shipping Partner</h1>
+            <p>Swift Logistics offers fast, secure, and efficient shipping solutions for businesses of all sizes.</p>
+            <a href="#contact" class="btn">Get a Quote</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why Choose Us</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Global Network</h3>
+                <p>Access to a vast network of shipping routes worldwide.</p>
+            </div>
+            <div class="feature">
+                <h3>Real-time Tracking</h3>
+                <p>Monitor your shipments 24/7 with our advanced tracking system.</p>
+            </div>
+            <div class="feature">
+                <h3>Customized Solutions</h3>
+                <p>Tailored logistics solutions to meet your unique needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>Air Freight</h3>
+                <p>Fast and reliable air shipping for time-sensitive cargo.</p>
+            </div>
+            <div class="service">
+                <h3>Ocean Freight</h3>
+                <p>Cost-effective sea shipping for large volumes.</p>
+            </div>
+            <div class="service">
+                <h3>Ground Transportation</h3>
+                <p>Efficient road and rail shipping options.</p>
+            </div>
+            <div class="service">
+                <h3>Warehousing</h3>
+                <p>Secure storage and inventory management solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Swift Logistics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
